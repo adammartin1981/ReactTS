@@ -5,13 +5,14 @@
   "author": "Adam Martin",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
+    "start": "webpack-dev-server --progress --colors --hot --mode development --config ./webpack.config.js"
   },
   "dependencies": {
     "webpack": "^4.8.3",
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
+    "react-hot-loader": "^4.2.0",
     "webpack-cli": "^2.1.3"
   }
 }
