@@ -14,5 +14,22 @@ module.exports = {
     devServer: {
         contentBase: './' + outDir,
         hot: true
+    },
+    module: {
+        rules: [{
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            use: [{
+                loader: 'babel-loader',
+                options: {
+                    babelrc: false,
+                    plugins: ['react-hot-loader/babel'],
+                    presets:['react']
+                }
+            }]
+        }]
+    },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
     }
 };

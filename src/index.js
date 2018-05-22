@@ -1,5 +1,11 @@
-console.log('React Webpack Babel Setup Working!');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('My Minimal React Webpack Babel Setup');
+const title = 'React Webpack Babel Setup Complete!';
+
+ReactDOM.render(
+    <div>{title}</div>,
+    document.getElementById('app')
+);
 
 module.hot.accept();

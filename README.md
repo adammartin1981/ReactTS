@@ -19,3 +19,4 @@ and used as a reference point for myself as well as testing new ideas.
 
 ## References
 https://github.com/react-native-training/manual-react-setup
+https://github.com/gaearon/react-hot-loader
