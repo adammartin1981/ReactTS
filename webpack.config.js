@@ -4,7 +4,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './src/index.js'
+        './src/index.jsx'
     ],
     output: {
         path: __dirname + '/' + outDir,
@@ -24,7 +24,7 @@ module.exports = {
                 options: {
                     babelrc: false,
                     plugins: ['react-hot-loader/babel'],
-                    presets:['react']
+                    presets:['@babel/preset-env', '@babel/preset-react']
                 }
             }]
         }]

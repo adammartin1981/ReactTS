@@ -16,7 +16,11 @@ and used as a reference point for myself as well as testing new ideas.
 * SourceMaps for Typescript
 * Chunked/Split Bundle
 * Router V4
+* Typescript Tests
 
 ## References
-https://github.com/react-native-training/manual-react-setup
-https://github.com/gaearon/react-hot-loader
+
+* https://github.com/react-native-training/manual-react-setup
+* https://github.com/gaearon/react-hot-loader
+* https://blog.craftlab.hu/all-the-new-things-setting-up-webpack-4-with-babel-7-39a5225b8168
+* http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/

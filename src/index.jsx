@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'React Webpack Babel Setup Complete!';
+import { Main } from './views/Main';
 
 ReactDOM.render(
-    <div>{title}</div>,
+    Main,
     document.getElementById('app')
 );
 
