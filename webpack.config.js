@@ -17,19 +17,24 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.jsx?$/,
+            test: /\.(tsx|ts|js|jsx)$/,
             exclude: /node_modules/,
             use: [{
                 loader: 'babel-loader',
                 options: {
                     babelrc: false,
-                    plugins: ['react-hot-loader/babel'],
-                    presets:['@babel/preset-env', '@babel/preset-react']
+                    plugins: [
+                        'react-hot-loader/babel'
+                    ],
+                    presets:[
+                        '@babel/typescript',
+                        '@babel/react'
+                    ]
                 }
             }]
         }]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx', '.ts', '.tsx']
     }
 };
